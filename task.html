@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            display: inline-block;
+            animation-timing-function:linear;
+        }
+        div{
+            width: 50px;
+            height: 50px;
+            background-color: black;
+            border-radius: 50%;
+        }
+        .aa{
+         animation-name: google;   
+         animation-duration: 1s;
+         animation-delay: 0.0s;
+         background-color:blue;
+         animation-iteration-count: infinite;
+        }
+        .bb{
+         animation-name: google;   
+         animation-duration: 1s;
+         animation-delay: 0.10s;
+         background-color: red;
+         animation-iteration-count: infinite;
+        }
+    
+        .cc{
+         animation-name: google;   
+         animation-duration: 1s;
+         animation-delay: 0.20s;
+         background-color:yellow;
+         animation-iteration-count: infinite;
+         animation-fill-mode: backwards;
+        }
+        .dd{
+         animation-name: google;   
+         animation-duration: 1s;
+         animation-delay: 0.30s;
+         background-color: green;
+         animation-iteration-count: infinite;
+        }
+        @keyframes google{
+            0%{
+                transform: translateY(20px);
+                height: 40px;
+            }
+           33%{
+                transform: translateY(40px);
+                height: 60px;
+           }
+           66%{
+                transform: translateY(60px);
+                height: 80px;
+            }
+            100%{
+                transform: translateY(80px);
+                height: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="aa"></div>
+    <div class="bb"></div>
+    <div class="cc"></div>
+    <div class="dd"></div>
+    
+</body>
+</html>
